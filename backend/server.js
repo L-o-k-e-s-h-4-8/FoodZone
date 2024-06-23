@@ -12,12 +12,8 @@ const swaggerJSDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
 
 const pool = new Pool({
-  user: "postgres",
-  host: "localhost",
-  database: "restaurants",
-  password: "root",
-  port: 5432,
-});
+  connectionString: process.env.POSTGRES_URL,
+})
 
 const app = express();
 app.use(bodyParser.json());
