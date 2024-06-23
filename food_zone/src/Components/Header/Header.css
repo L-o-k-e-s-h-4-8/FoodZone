@@ -1,0 +1,86 @@
+.header {
+  width: 90%;
+  height: 34vw;
+  margin: 30px auto;
+  position: relative;
+  background-size: cover;
+  transition: all 0.4s ease-in-out;
+  animation: fadeIn 3s;
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 70%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+
+.prev_button {
+  position: absolute;
+  top: 400px;
+  width: 50px;
+  height: 80px;
+  font-size: 42px;
+  color: white;
+  background: transparent;
+}
+
+.next_button {
+  position: absolute;
+  top: 400px;
+  left: 2020px;
+  width: 50px;
+  height: 80px;
+  font-size: 42px;
+  color: white;
+  background: transparent;
+}
+
+@media (max-width: 1350px) {
+  .header-contents {
+    max-width: 55%;
+  }
+  .header-contents p {
+    display: none;
+  }
+  .order_button {
+    padding: 2vw 4vw;
+  }
+}
+
+.header h1 {
+  color: white;
+  font-size: max(4.5vw, 22px);
+  font-weight: 600;
+}
+
+.header p {
+  margin: 10px;
+  color: white;
+  font-size: 25px;
+  width: 50%;
+  font-weight: 400;
+}
+
+.order_button {
+  background: transparent;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  background-color: rgb(255, 172, 19);
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order_button:hover {
+  background-color: rgb(255, 180, 15);
+  transform: scale(1.05);
+}

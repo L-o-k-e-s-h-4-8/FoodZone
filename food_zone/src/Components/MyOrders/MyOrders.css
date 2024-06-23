@@ -1,0 +1,36 @@
+.order-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px #00000015;
+  transition: 0.3s;
+  animation: fadeIn 1s;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.items p {
+  margin-top: 4px;
+  font-size: 18px;
+}
+
+.desc1 {
+  height: 65px;
+  overflow-y: scroll;
+  margin-bottom: 5px;
+}
+
+.order_status {
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 0px 0px 15px 15px;
+  font-size: 20px;
+  color: black;
+  background-color: rgb(255, 182, 19);
+}

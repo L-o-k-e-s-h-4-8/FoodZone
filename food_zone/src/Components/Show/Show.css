@@ -1,0 +1,13 @@
+.circle {
+  background: url("./close_icon_1.png") no-repeat;
+  border-radius: 50%;
+  background-size: 50px;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  position: absolute;
+  top: 340px;
+  left: 1100px;
+  cursor: pointer;
+}

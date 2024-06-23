@@ -1,0 +1,184 @@
+.main-div {
+  background: url("../../assets/restaurant_bg.jpg") no-repeat;
+  width: 90%;
+  height: 34vw;
+  margin: 30px 80px;
+  background-size: cover;
+  position: relative;
+  animation: fadeIn 0.5s;
+}
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 60%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+.heading {
+  font-weight: 600;
+  color: white;
+  font-size: max(4.5vw, 22px);
+}
+
+@media (max-width: 1050px) {
+  .header-contents {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 770px) {
+  .heading {
+    font-size: 16px;
+  }
+  .header-contents {
+    max-width: 55%;
+  }
+  .main-div {
+    width: 70%;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 30px;
+  margin: 30px 80px;
+  gap: 60px;
+  row-gap: 50px;
+}
+
+.card_r {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #00000015;
+  transition: 0.3s;
+  height: 380px;
+  animation: fadeIn 1s;
+  position: relative;
+}
+.card_m {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #00000015;
+  transition: 0.3s;
+  height: 420px;
+  animation: fadeIn 1s;
+  position: relative;
+}
+.card_r button {
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+  color: black;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  height: 50px;
+  background-color: rgb(247, 170, 5);
+  cursor: pointer;
+}
+
+.description p {
+  padding: 10px;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+.card button:hover {
+  background-color: rgb(246, 183, 46);
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.back {
+  background-color: rgb(255, 182, 19);
+  font-size: 22px;
+  width: 25%;
+  border: none;
+  height: 50px;
+  border-radius: 50px;
+  font-weight: 500;
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+.back:hover {
+  background-color: rgb(246, 183, 46);
+}
+
+.menu_description {
+  padding: 20px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 10px;
+  color: #676767;
+}
+.menu-description-d {
+  height: 80px;
+  overflow-y: scroll;
+}
+
+.price {
+  color: rgb(209, 148, 4);
+  font-size: 22px;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.add_img {
+  width: 35px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.food-counter {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.food-counter img {
+  width: 35px;
+}
+
+.order-menu-button {
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+  color: black;
+  border: none;
+  font-size: 22px;
+  height: 50px;
+  font-weight: 500;
+  background-color: rgb(255, 180, 5);
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+}
+
+.order-menu-button:hover {
+  background-color: rgb(255, 192, 45);
+}

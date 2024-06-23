@@ -1,0 +1,89 @@
+.login {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  display: grid;
+}
+
+.login-container {
+  place-self: center;
+  width: max(23vw, 330px);
+  color: #808080;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 26px;
+  animation: fadeIn 0.5s;
+}
+
+.user_type {
+  padding: 5px;
+}
+
+.label {
+  margin: 10px;
+}
+
+.login-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.login-title img {
+  width: 16px;
+  cursor: pointer;
+}
+
+.login-input {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-input input {
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 22px;
+}
+
+.login-container button {
+  border: none;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px;
+  background-color: rgb(255, 182, 19);
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  transform: scale(1.05);
+}
+
+.login-conditions {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+
+.login-conditions input {
+  margin-top: 5px;
+}
+
+.span-tag {
+  cursor: pointer;
+  color: rgb(255, 182, 19);
+  font-weight: 500;
+}

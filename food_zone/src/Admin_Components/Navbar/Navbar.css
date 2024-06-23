@@ -1,0 +1,60 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4%;
+  height: 150px;
+  background-color: #323232;
+}
+
+.logo_1 {
+  width: 150px;
+  height: 100px;
+}
+
+.restaurant-data {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  border: 1px solid #a9a9a9;
+  width: 120px;
+  padding: 8px 10px;
+  border-radius: 3px 0px 0px 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar-option:hover {
+  transform: scale(1.05);
+  background-color: #494949;
+}
+
+.sidebar-option p {
+  display: block;
+  margin: auto;
+}
+
+.restaurant-description {
+  margin-top: 8px;
+  font-size: 18px;
+  color: white;
+}
+
+.profile {
+  border-radius: 50px;
+  height: 80px;
+}
+
+.required-icons {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  gap: 80px;
+  color: white;
+}
